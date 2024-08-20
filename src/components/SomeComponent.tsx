@@ -4,6 +4,7 @@ import ModalFirst from "./modals/ModalFirst"
 import ModalSecond from "./modals/ModalSecond"
 import ModalThird from "./modals/ModalThird"
 import { useDialog } from "../hooks/useDialog"
+import DialogContainer from "./DialogContainer"
 
 const SomeComponent = () => {
 
@@ -36,7 +37,8 @@ const SomeComponent = () => {
 
       <p className='mt-3'>{result}</p>
 
-      
+      <DialogContainer {...dialog} />
+
     </Container>
   )
 }
